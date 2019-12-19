@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4FFFC"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/insertId"
+        android:hint="   id"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"
+        />
+    <EditText
+        android:id="@+id/insertPw"
+        android:hint="   pw"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/insertId"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/checkPw"
+        android:hint="   pw check"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/insertPw"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/name"
+        android:hint="   name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/checkPw"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/age"
+        android:hint="   age"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/name"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/sex"
+        android:hint="   sex"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/age"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/tall"
+        android:hint="   tall"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/sex"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/weight"
+        android:hint="   weight"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tall"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/muscle"
+        android:hint="   muscle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/weight"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <EditText
+        android:id="@+id/fat"
+        android:hint="   fat"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/muscle"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+    <Button
+        android:id="@+id/signBtn"
+        android:onClick="signBtnClick"
+        android:text="Signin"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fat"
+        android:layout_margin="10dp"
+        android:background="@drawable/custon_button"/>
+
+</RelativeLayout>

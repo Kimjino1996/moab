@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4FFFC"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="K-Health"
+        android:textSize="70sp"
+        android:textColor="#00D6FF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40sp"
+        android:layout_above="@id/relative"/>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="350dp"
+        android:layout_height="430dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custon_button"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/user2"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/id"
+            android:layout_margin="20dp"/>
+        <EditText
+            android:id="@+id/id"
+            android:layout_above="@id/pw"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:hint="ID here"
+            android:layout_centerInParent="true"/>
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_centerInParent="true"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:hint="PW here"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/login"
+            android:onClick="loginClick"
+            android:layout_below="@id/pw"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:text="login"
+            android:textSize="25sp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custon_button2"/>
+        <Button
+            android:id="@+id/signup"
+            android:text="Signup"
+            android:textSize="20sp"
+            android:onClick="singUpClick"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+
+            android:layout_below="@id/login"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
